@@ -35,6 +35,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'terminal-notifier-guard'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
