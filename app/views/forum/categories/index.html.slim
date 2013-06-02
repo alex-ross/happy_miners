@@ -1,0 +1,9 @@
+h1 Forum categories
+
+ul.main-list
+  -@forum_categories.each do |category|
+    li
+      = link_to category do
+        = category.name
+        .pull-right
+          i.fontello-right-open-big
